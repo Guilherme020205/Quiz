@@ -1,0 +1,103 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 1.5vw;
+
+}
+
+body {
+    background-image: url("img633649ee7b8ee6.96278571.jpg");
+}
+
+.img1 {
+    width: 20vw;
+    height: min-content;
+    position: fixed;
+    left: 100vh;
+    top: 10vw;
+}
+
+.img2 {
+    width: 20vw;
+    height: min-content;
+    position: fixed;
+    left: 0vh;
+    top: 30vw;
+}
+
+.img3 {
+    width: 20vw;
+    height: min-content;
+    position: fixed;
+    left: 110vh;
+    top: 40vw;
+}
+
+.menu {
+    background-image: -webkit-linear-gradient(top, #5e5403, #5e530350);
+    height: 100vmin;
+    padding: 0.5vw;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5vw;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+.menu>input {
+    padding: 1vw;
+    cursor: pointer;
+    width: 20vw;
+    height: min-content;
+    border: none;
+}
+
+.menu>.input1:hover {
+    border: solid #337FED 1px;
+    background: #1E62D0;
+    background-image: -webkit-linear-gradient(top, #1E62D0, #3D94F6);
+    background-image: -moz-linear-gradient(top, #1E62D0, #3D94F6);
+    background-image: -ms-linear-gradient(top, #1E62D0, #3D94F6);
+    background-image: -o-linear-gradient(top, #1E62D0, #3D94F6);
+    background-image: -webkit-gradient(to bottom, #1E62D0, #3D94F6);
+    border-radius: 2px;
+    text-decoration: none;
+}
+
+.menu>.input2:hover {
+    border: solid #337FED 1px;
+    background: #1E62D0;
+    background-image: -webkit-linear-gradient(top, #1E62D0, #3D94F6);
+    background-image: -moz-linear-gradient(top, #1E62D0, #3D94F6);
+    background-image: -ms-linear-gradient(top, #1E62D0, #3D94F6);
+    background-image: -o-linear-gradient(top, #1E62D0, #3D94F6);
+    background-image: -webkit-gradient(to bottom, #1E62D0, #3D94F6);
+    border-radius: 2px;
+    text-decoration: none;
+}
+
+.menu>.input3:hover {
+    border: solid #337FED 1px;
+    background: #1E62D0;
+    background-image: -webkit-linear-gradient(top, #1E62D0, #3D94F6);
+    background-image: -moz-linear-gradient(top, #1E62D0, #3D94F6);
+    background-image: -ms-linear-gradient(top, #1E62D0, #3D94F6);
+    background-image: -o-linear-gradient(top, #1E62D0, #3D94F6);
+    background-image: -webkit-gradient(to bottom, #1E62D0, #3D94F6);
+    border-radius: 2px;
+    text-decoration: none;
+}
+
+.menu>.input4:hover {
+    border: solid #337FED 1px;
+    background: #1E62D0;
+    background-image: -webkit-linear-gradient(top, #1E62D0, #3D94F6);
+    background-image: -moz-linear-gradient(top, #1E62D0, #3D94F6);
+    background-image: -ms-linear-gradient(top, #1E62D0, #3D94F6);
+    background-image: -o-linear-gradient(top, #1E62D0, #3D94F6);
+    background-image: -webkit-gradient(to bottom, #1E62D0, #3D94F6);
+    border-radius: 2px;
+    text-decoration: none;
+}
