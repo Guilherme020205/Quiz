@@ -8,7 +8,7 @@ var perguntas = [
 
 //btn registrar pergunta
 function btnRegistrar() {
-    for (let i = 0; i < 2; i++) {
+    for (let i = 0; i < 10; i++) {
         //Número da pergunta
         // var nPergunta = i
         //questão é a certa ou não
@@ -43,14 +43,30 @@ function btnResponder() {
     var pontosNegativos = 0
 
     if (perguntas[0].length > 0) {
-        for (let i = 0; i < 2; i++) {
+        //ordem de perguntas
+        var ordemPergunta = [];
 
-            let resposta = prompt(`${perguntas[0][i]}
-  A) ${perguntas[1][i]}
-  B) ${perguntas[2][i]}
-  C) ${perguntas[3][i]}`);
+        let armazena_numeroOrdemPergunta;
 
-            if (resposta.toLowerCase() == perguntas[4][i].toLowerCase()) {
+        for (let i = 0; i < 10; i++) {
+            armazena_numeroOrdemPergunta = parseInt((Math.random() * 10))
+
+            if (ordemPergunta.indexOf(armazena_numeroOrdemPergunta) === -1) {
+                ordemPergunta.push(armazena_numeroOrdemPergunta);
+            } else {
+                i--;
+            }
+        }
+        console.log(ordemPergunta)
+
+        for (let i = 0; i < 10; i++) {
+
+            let resposta = prompt(`${(i + 1)}) ${perguntas[0][ordemPergunta[i]]}
+  A) ${perguntas[1][ordemPergunta[i]]}
+  B) ${perguntas[2][ordemPergunta[i]]}
+  C) ${perguntas[3][ordemPergunta[i]]}`);
+
+            if (resposta.toLowerCase() == perguntas[4][ordemPergunta[i]].toLowerCase()) {
                 alert(`Parabéns a aternativa ${resposta.toUpperCase()} está correta!`)
                 pontosPositivos += 1
             } else {
@@ -60,16 +76,17 @@ function btnResponder() {
         }
         //pontuação do quiz
         alert(`Pontos Positivos ${pontosPositivos}
-Pontos Negatios ${pontosNegativos}`);
+Pontos Negativos ${pontosNegativos}`);
 
     } else {
         alert("Cadastre as perguntas antes de tentar responder!")
     }
 }
+
 function btnResetar() {
     alert("Perguntas Resetadas")
 
-    for(let i = 0; i < 2; i++){
+    for (let i = 0; i < 10; i++) {
         perguntas[0].splice(i)
         perguntas[1].splice(i)
         perguntas[2].splice(i)
@@ -78,6 +95,6 @@ function btnResetar() {
     }
 }
 
-function btnSair(){
+function btnSair() {
     window.close()
 }
